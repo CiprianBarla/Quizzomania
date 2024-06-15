@@ -1,0 +1,147 @@
+/* Apply background image to Home container */
+.home-container {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/691/884/small/blue-question-mark-background-with-text-space-quiz-symbol-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Center align vertically */
+    color: #000; /* White text color */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+/* Styling for the action buttons in the navbar */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:last-child {
+    margin-right: 0; /* Remove right margin for the last link */
+}
+
+.nav-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Additional styling for Quiz component */
+.quiz-container {
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* White text color */
+}
+
+.quiz-container h2 {
+    font-size: 3rem; /* Larger font size for quiz title */
+    margin-bottom: 30px;
+}
+
+.quiz-container h3 {
+    font-size: 2.5rem; /* Larger font size for question number */
+    margin-bottom: 20px;
+    color: #000; /* Black text color */
+}
+
+.quiz-container p {
+    font-size: 2rem; /* Larger font size for question */
+    margin-bottom: 30px;
+    color: #000; /* Black text color */
+}
+
+.quiz-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quiz-container li {
+    font-size: 1.8rem; /* Larger font size for options */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: #000; /* Black text color */
+}
+
+.quiz-container label {
+    display: flex;
+    align-items: center;
+}
+
+.quiz-container input[type="radio"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cc1515;
+    border-radius: 50%; /* Enlarged circle for radio button */
+    outline-color: #0056b3;
+    outline-style: dashed;
+    outline-width: 0cap;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.quiz-container input[type="radio"]:checked {
+    background-color: #007bff; /* Blue background for selected option */
+}
+
+.quiz-container button {
+    padding: 20px 40px; /* Larger padding for buttons */
+    font-size: 1.8rem; /* Larger font size for buttons */
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.quiz-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for Quiz Types in QuizSelection */
+.quiz-types {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+}
+
+.quiz-type-link {
+    padding: 12px 24px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration-color: aqua;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-type-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

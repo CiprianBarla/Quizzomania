@@ -1,0 +1,122 @@
+/* Set background image and styles for the about container */
+.about-container {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20211116/pngtree-dark-blue-plain-background-for-design-template-image_916068.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    min-width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8); /* Increase transparency */
+}
+
+/* Logo styles */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navigation link styles */
+.nav-link {
+    padding: 10px;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.nav-links .home {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links .home:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* About content container */
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    max-width: 1200px;
+    margin: 100px auto 20px; /* Adjust top margin to avoid overlapping with navbar */
+    padding: 20px;
+    text-align: left;
+}
+
+/* Text content styles */
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Image container styles */
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Image styles */
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    /* Adjust navbar styles for smaller screens */
+    .navbar {
+        padding: 10px; /* Reduce padding for compactness */
+    }
+
+    /* Adjust margin of about content for smaller screens */
+    .about-content {
+        margin-top: 60px; /* Increase top margin to avoid overlapping with navbar */
+    }
+}

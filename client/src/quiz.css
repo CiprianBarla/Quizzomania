@@ -1,0 +1,95 @@
+/* Styling for QuizResult container */
+.quiz-result-container {
+    background-image: url('https://www.leadquizzes.com/wp-content/uploads/2019/02/New-blog-graphic.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Center align vertically */
+    color: #2db8db; /* White text color */
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Hide overflow to keep content within bounds */
+}
+
+.quiz-result-inner {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-height: 80%; /* Keep the inner container within viewport */
+    overflow-y: auto; /* Scrollable content */
+}
+
+.quiz-result-container h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    margin-bottom: 20px;
+}
+
+.quiz-result-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000; /* Ensure text is white for visibility */
+}
+
+/* Style for the action button */
+.action-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    margin: 10px;
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.result-details {
+    max-height: 400px; /* Adjust this height as needed */
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3269e2;
+    color: #000; /* Black text color for responses */
+}
+
+.question-result {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.question-result p {
+    margin: 5px 0;
+    color: #000; /* Black text color for responses */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+/* Ensure consistency for action buttons */
+.button-container .action-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-container .action-button:hover {
+    background-color: #0056b3;
+}
